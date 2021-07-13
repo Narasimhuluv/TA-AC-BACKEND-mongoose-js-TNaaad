@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 let schema = mongoose.Schema
 
 let userSchema = new Schema({
-    name : "Narasimhulu",
-    age : 23,
-    email : "vasamnarasimhulu123@gmail.com"
+    name : String,
+    age : Number,
+    email : String
 })
