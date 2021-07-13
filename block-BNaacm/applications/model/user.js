@@ -6,5 +6,5 @@ let userSchema = new Schema({
     email : String,
     password : String
 })
-
-module.exports = mongosose.model("User", userSchema)
+let User = mongosose.model("User", userSchema)
+module.exports = User
