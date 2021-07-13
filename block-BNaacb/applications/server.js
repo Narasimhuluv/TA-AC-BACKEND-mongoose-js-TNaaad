@@ -8,6 +8,12 @@ mongoose.connect("mongodb://localhost/one",{ useNewUrlParser: true , useUnifiedT
 })
 let app = express();
 
+
+app.use('/admin',(req,res,next) => {
+    res.send('Unathorised')
+    next
+})
+
 // middleWares 
 app.use(looger('dev'))
 app.use(express.json())
