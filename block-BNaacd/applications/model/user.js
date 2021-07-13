@@ -9,5 +9,5 @@ let userSchema = new Schema({
 
 let userSchema1 = new Schema({
     email : {type: String, lowercase : true},
-    age : {type : Number, value : 0}
+    age : {type : Number, default : 0}
 })
